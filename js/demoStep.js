@@ -1,39 +1,71 @@
+document.getElementById("qui1").addEventListener("click", grabIt);
+function grabIt() {
+	var checkbox = document.getElementById('qui1').checked;
 
-function doIt(){
-var element1 = document.getElementById("email").value
-var element2 = document.getElementById("password").value
-var element4 = document.getElementById("thing5").value
-var element5 = document.getElementById("thing6").value
-var element6 = document.getElementById("qui1").value
-var element7 = document.getElementById("qui2").value
-var element8 = document.getElementById("qui3").value
-var element9 = document.getElementById("qui4").value
+    alert('checkbox value1: ' + checkbox);
 
-
-
-if (element6 === "on"){
-	var discours = "Mon4sieur devriez pour votre projet de langue suivre le cours XX"
-	var total = discours + " " + element1 +" "+element2 + " " + element4 +  "  " +element5
-
-	alert(total);
-	document.getElementById("input1").innerHTML = element1
-document.getElementById("input2").innerHTML = element2
+  if (checkbox == true) {
+  		document.getElementById("input1").innerHTML = "Pour un voyage en français vous pouvez utiliser notre produit : ";
+  		document.getElementById("input2").innerHTML = "Cours intensif";
+  }
+  if(checkbox == false) {
+  	document.getElementById("input1").innerHTML = "Vous pouvez apprendre le français pour voyager et apprécier la culture du pays";
+  	document.getElementById("input2").innerHTML = "Et si vous vous inscriviez à un cous de français ?";
+  }
+  else {
+	alert ("choisir une option pour obtenir une réduction")
 }
 
-else {
-	console.log(element6 + element7 + element8 + element9)
 }
 
-if (element7 === "on") {
-	var discours = "Madame vous devriez pour votre projet de langue suivre le cours XX"
-	var total = discours + " " + element1 +" "+element2 + " " + element4 +  "  " +element5
-
-	alert(total);
-	document.getElementById("input1").innerHTML = element1
-document.getElementById("input2").innerHTML = element2
+document.getElementById("qui2").addEventListener("click", grabIt1);
+function grabIt1() {
+	var checkbox = document.getElementById('qui2').checked;
+  alert('checkbox value2: ' + checkbox);
+    if (checkbox == true) {
+  		document.getElementById("input1").innerHTML = "Pour un voyage en français vous pouvez utiliser notre produit : ";
+  		document.getElementById("input2").innerHTML = "Cours 2";
+  }
+  if(checkbox == false) {
+  	document.getElementById("input1").innerHTML = "Vous pouvez apprendre le français pour voyager et apprécier la culture du pays";
+  	document.getElementById("input2").innerHTML = "Et si vous vous inscriviez à un cous de français ?";
+  }
+  else {
+	alert ("choisir une option pour obtenir une réduction")
+}
 }
 
-else {
-	console.log(element6 + element7 + element8 + element9)
+document.getElementById("qui3").addEventListener("click", grabIt2);
+function grabIt2() {
+	var checkbox = document.getElementById('qui3').checked;
+  alert('checkbox value3: ' + checkbox);
+    if (checkbox == true) {
+  		document.getElementById("input1").innerHTML = "Pour un voyage en français vous pouvez utiliser notre produit : ";
+  		document.getElementById("input2").innerHTML = "Séjour";
+  }
+  if(checkbox == false) {
+  	document.getElementById("input1").innerHTML = "Vous pouvez apprendre le français pour voyager et apprécier la culture du pays";
+  	document.getElementById("input2").innerHTML = "Et si vous vous inscriviez à un cous de français ?";
+  }
+  else {
+	alert ("choisir une option pour obtenir une réduction")
 }
 }
+
+document.getElementById("qui4").addEventListener("click", grabIt3);
+function grabIt3() {
+	var checkbox = document.getElementById('qui4').checked;
+  alert('checkbox value4: ' + checkbox);
+    if (checkbox == true) {
+  		document.getElementById("input1").innerHTML = "Pour un voyage en français vous pouvez utiliser notre produit : ";
+  		document.getElementById("input2").innerHTML = "Cinéma";
+  }
+  if(checkbox == false) {
+  	document.getElementById("input1").innerHTML = "Vous pouvez apprendre le français pour voyager et apprécier la culture du pays";
+  	document.getElementById("input2").innerHTML = "Et si vous vous inscriviez à un cous de français ?";
+  }
+  else {
+	alert ("choisir une option pour obtenir une réduction")
+}
+}
+
