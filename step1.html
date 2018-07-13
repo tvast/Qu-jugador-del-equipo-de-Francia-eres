@@ -27,7 +27,7 @@
 </head>
 <body>
   <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><img width="50%ee" src="http://www.institutfrancais.es/madrid/wp-content/uploads/2017/10/logo-institut-francais-espagne.png"></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#">Navbar Link</a></li>
       </ul>
@@ -95,12 +95,68 @@
                      <li class="step">
                         <div class="step-title waves-effect waves-dark">Lorem ipsum</div>
                         <div class="step-content">
-                          Lorem ipsum
+                          <div class="row center">
+                            <div class="col s12"><h1>Sexe ?</h1> </div>
+                            <div class="col s6 center"><input class="messageCheckbox" type="checkbox" name='thing5' id="thing5"/><label for="thing5"></label> </div>
+                            <div class="col s6 center"><input class="messageCheckbox" type="checkbox" name='thing6' id="thing6"/><label for="thing6"></label> </div>
+                          </div>
                            <div class="step-actions">
-                              <button class="waves-effect waves-dark btn next-step" data-feedback="anyThing">Lorem ipsum</button>
+                              <button  class="waves-effect waves-dark btn next-step" data-feedback="anyThing">Lorem ipsum</button>
                            </div>
                         </div>
                      </li>
+                      <li class="step">
+                        <div class="step-title waves-effect waves-dark">Lorem ipsum</div>
+                        <div class="step-content">
+                             <div class="row">
+                                  <div class="center col s12"><h1>Pour quoi ?</h1> </div>
+                                <div class="col s12 m6 l3"><input class="messageCheckbox" type="checkbox" name='thing1' id="thing1"/><label for="thing1"></label></div>
+                                <div class="col s12 m6 l3"> <input class="messageCheckbox" type="checkbox" name='thing2' id="thing2"/><label for="thing2"></label></div>
+                                <div class="col s12 m6 l3"><input class="messageCheckbox" type="checkbox" name='thing3' id="thing3"/><label for="thing3"></label> </div>
+                                <div class="col s12 m6 l3"><input class="messageCheckbox" type="checkbox" name='thing4' id="thing4"/><label for="thing4"></label> </div>
+                              </div>
+                           <div class="step-actions">
+                              <button  class="waves-effect waves-dark btn next-step" data-feedback="anyThing">Lorem ipsum</button>
+                           </div>
+                        </div>
+                     </li>
+
+                      <li class="step">
+                        <div class="step-title waves-effect waves-dark">Lorem ipsum</div>
+                        <div class="step-content">
+                           <p>
+                            <label>
+                              <input name="group1" type="radio" checked />
+                              <span>Red</span>
+                            </label>
+                          </p>
+                          <p>
+                            <label>
+                              <input name="group1" type="radio" />
+                              <span>Yellow</span>
+                            </label>
+                          </p>
+                          <p>
+                            <label>
+                              <input class="with-gap" name="group1" type="radio"  />
+                              <span>Green</span>
+                            </label>
+                          </p>
+                          <p>
+                            <label>
+                              <input name="group1" type="radio" disabled="disabled" />
+                              <span>Brown</span>
+                            </label>
+                          </p>
+                           <div class="step-actions">
+                              <button  class="waves-effect waves-dark btn next-step" data-feedback="anyThing">Lorem ipsum</button>
+                           </div>
+                        </div>
+                     </li>
+
+                      
+
+
                   </ul>
 
                </div>
@@ -113,8 +169,22 @@
       
 
   <div class="row center">
-        <a class="blue waves-effect waves-light btn-large">Button</a>
+        <a onclick="doIt()" href="#modal1" class="blue waves-effect waves-light btn-large">Generate</a>
       </div>
+
+        <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4 id="input1">Modal Header</h4>
+      <p id="input2">A bunch of text</p>
+      Nous vous conseillons le cours niveau A1 :
+      <img width="50%" src="cours.png">
+      <a class="blue waves-effect waves-light btn-large" href="http://www.institutfrancais.es/madrid/fr/cours-de-francais/adultes/">Découvrir avec un code promo</a>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
 
   <footer class="page-footer blue">
     <div class="container">
@@ -180,6 +250,13 @@ $(function(){
    $('.stepper').activateStepper();
 });
 </script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.modal').modal();
+  });
+</script>
+
+<script type="text/javascript" src="js/demoStep.js"></script>
 
   </body>
 </html>
