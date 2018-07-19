@@ -171,7 +171,19 @@ span.round-tab:hover {
     bordercolor:#000000 ;
 }
 
-input[type=checkbox] {
+.background {
+    /*background-image: url(1008980.jpg);
+    background-repeat: no-repeat;
+    width: 100%;*/
+
+    background: url(1008980.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/*input[type=checkbox] {
 display:none;
 }
  
@@ -309,16 +321,16 @@ padding: 0 0 0 0px;
 }
 
 video#bgvid { 
-    position: fixed;
+    position: absolute;
     top: 50%;
     left: 50%;
     min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
+    min-height: 50%;
+    /*width: auto;
+    height: auto;*/
     z-index: -100;
     -ms-transform: translateX(-50%) translateY(-50%);
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-}
+}*/
