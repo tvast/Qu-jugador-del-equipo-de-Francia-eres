@@ -181,156 +181,59 @@ span.round-tab:hover {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  /* -webkit-filter: contrast(110%) brightness(110%) sepia(30%) grayscale(100%);
+  filter: contrast(110%) brightness(110%) sepia(30%) grayscale(100%);*/
+
 }
 
-input[type=checkbox] {
-display:none;
-}
- 
-input#thing1[type=checkbox] + label
-{
-background-image: url("assets/weding.png");
-border-color: white;
-border-style: solid;
-border-radius: 50%;
-width:100px;
-    height: 100px;
-display:inline-block;
-padding: 0 0 0 0px;
-background-size: 100px;
-}
-input#thing2[type=checkbox] + label
-{
-background-image: url("assets/baby.png");
-border-color: white;
-border-style: solid;
-border-radius: 50%;
-width:100px;
-    height: 100px;
-display:inline-block;
-padding: 0 0 0 0px;
-background-size: 100px;
-}
-input#thing3[type=checkbox] + label
-{
-background-image: url("assets/trip.png");
-border-color: white;
-border-style: solid;
-border-radius: 50%;
-width:100px;
-    height: 100px;
-display:inline-block;
-padding: 0 0 0 0px;
-background-size: 100px;
-}
-input#thing4[type=checkbox] + label
-{
-background-image: url("assets/diploma.png");
-border-color: white;
-border-style: solid;
-border-radius: 50%;
-width:100px;
-    height: 100px;
-display:inline-block;
-padding: 0 0 0 0px;
-background-size: 100px;
+/*.background::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  pointer-events: none;
+  background: rgba(0, 0, 0, 0);
+}*/
+
+.soccer {
+  background: url(http://upload.wikimedia.org/wikipedia/en/e/ec/Soccer_ball.svg);
+  background-size: 100px 100px;
+  height: 100px;
+  width: 100px;
+  position: relative;
+  -webkit-animation:roll 4.5s infinite;
+  -moz-animation:roll 4.5s infinite;
+  animation:roll 4.5s infinite;
 }
 
-input#thing5[type=checkbox] + label
-{
-background-image: url("assets/man3.png");
-border-color: white;
-border-style: solid;
-border-radius: 50%;
-width:100px;
-    height: 100px;
-display:inline-block;
-padding: 0 0 0 0px;
-
-background-size: 100px;
+@-moz-keyframes roll {  
+  0% {left:0px; -webkit-transform: rotate(-360deg);}
+  50% {left:1000px; -webkit-transform: rotate(360deg);}
+  100% {left:0px; -webkit-transform: rotate(-360deg);}
 }
-input#thing6[type=checkbox] + label
-{
-background-image: url("assets/woman3.png");
-border-color: white;
-border-style: solid;
-border-radius: 50%;
-    width:100px;
-    height: 100px;
-display:inline-block;
-padding: 0 0 0 0px;
-background-size: 100px;
-}
-input#thing1[type=checkbox]:checked + label
-{
-border-color: green;
-border-style: solid;
-border-radius: 50%;
-width:100px;
-    height: 100px;
-display:inline-block;
-padding: 0 0 0 0px;
-}
-input#thing2[type=checkbox]:checked + label
-{
-border-color: green;
-border-style: solid;
-border-radius: 50%;
-width:100px;
-    height: 100px;
-display:inline-block;
-padding: 0 0 0 0px;
-}
-input#thing3[type=checkbox]:checked + label
-{
-border-color: green;
-border-style: solid;
-width:100px;
-    height: 100px;
-display:inline-block;
-padding: 0 0 0 0px;
-}
-input#thing4[type=checkbox]:checked + label
-{
-border-color: green;
-border-style: solid;
-width:100px;
-    height: 100px;
-display:inline-block;
-padding: 0 0 0 0px;
+@-webkit-keyframes roll { 
+  0% {left:0px; -webkit-transform: rotate(-360deg);}
+  50% {left:1000px; -webkit-transform: rotate(360deg);}
+  100% {left:0px; -webkit-transform: rotate(-360deg);}
 }
 
-input#thing5[type=checkbox]:checked + label
-{
-border-color: green;
-border-style: solid;
-    width:100px;
-    height: 100px;
-display:inline-block;
-padding: 0 0 0 0px;
+@keyframes roll { 
+  0% {left:0px; -webkit-transform: rotate(-360deg);}
+  50% {left:1000px; -webkit-transform: rotate(360deg);}
+  100% {left:0px; -webkit-transform: rotate(-360deg);}
 }
 
-input#thing6[type=checkbox]:checked + label
-{
-border-color: green;
-border-style: solid;
-    width:100px;
-    height: 100px;
-display:inline-block;
-padding: 0 0 0 0px;
+.world-cup {
+  color: #82AE6F;
+  text-align: center;
 }
 
-video#bgvid { 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 50%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+.title {
+   /* font-family: 'Bungee Shade', cursive;
+font-family: 'Monoton', cursive;*/
+font-family: 'Black Ops One', cursive;
 }
+
