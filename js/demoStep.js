@@ -30,8 +30,8 @@ function grabIt() {
 
 
 }
-
-document.getElementById("qui2").addEventListener("click", grabIt);  
+//... second question
+document.getElementById("qui2").addEventListener("click", grabIt1);  
 function grabIt1() {
   var checkbox = document.getElementById('qui2').checked;
 
@@ -56,7 +56,7 @@ function grabIt1() {
 
 }
 
-document.getElementById("qui3").addEventListener("click", grabIt);  
+document.getElementById("qui3").addEventListener("click", grabIt2);  
 function grabIt2() {
   var checkbox = document.getElementById('qui3').checked;
 
@@ -81,7 +81,7 @@ function grabIt2() {
 
 }
 
-document.getElementById("qui4").addEventListener("click", grabIt);  
+document.getElementById("qui4").addEventListener("click", grabIt3);  
 function grabIt3() {
   var checkbox = document.getElementById('qui4').checked;
 
@@ -106,7 +106,7 @@ function grabIt3() {
 
 }
 
-document.getElementById("qui5").addEventListener("click", grabIt);  
+document.getElementById("qui5").addEventListener("click", grabIt4);  
 function grabIt4() {
   var checkbox = document.getElementById('qui5').checked;
 
@@ -131,7 +131,7 @@ function grabIt4() {
 
 }
 
-document.getElementById("qui6").addEventListener("click", grabIt);  
+document.getElementById("qui6").addEventListener("click", grabIt5);  
 function grabIt5() {
   var checkbox = document.getElementById('qui6').checked;
 
