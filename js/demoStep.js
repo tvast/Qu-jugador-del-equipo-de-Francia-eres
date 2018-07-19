@@ -157,12 +157,16 @@ function grabIt5() {
 }
 
 function total() {
+
+var nombreJugador = document.getElementById("nombre").value
+console.log(nombreJugador)
+
   if (Profil1 > Profil2) {
-    document.getElementById("input1").innerHTML = "Pour un voyage en français vous pouvez utiliser notre produit : ";
+    document.getElementById("input1").innerHTML = "Vous êtes attaquant " + " " +nombreJugador;
     document.getElementById("input2").innerHTML = "Cours intensif";
   }
   if (Profil1 < Profil2) {
-    document.getElementById("input1").innerHTML = "Pour un voyage en français vous pouvez utiliser notre produit : ";
+    document.getElementById("input1").innerHTML = "Vous êtes défensseur" + " " +nombreJugador;
     document.getElementById("input2").innerHTML = "Séjour";
   }
 }
